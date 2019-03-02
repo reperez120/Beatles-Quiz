@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>A Hard Day's Quiz</title>
+  <meta name="description" content="A quiz on the famous English rock band the Beatles.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="containerHeader">
+    <header role="banner">
+      <h1> A Hard Day's Quiz </h1>
+      <img id="startPageImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/The_Beatles_in_America.JPG/800px-The_Beatles_in_America.JPG" alt="the band the Beatles arriving in the US in 1964">
+    </header>
+  </div>
+  <main role="main">
+
+    <div class="startPage">
+      <h2>Roll up, roll up for the mystery quiz!</h2>
+      <button type="button" class="startButton"> Roll up!</button>
+    </div>
+
+    <div class="quizImage">
+      <img id="questionPageImage" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="the Beatles with guitars in 1965">
+    </div>
+
+    <div class="quizQuestions">
+      <form>
+        <fieldset>
+          <legend></legend>
+          <label class="answerChoice">
+              <input class="answer" type="radio" value="${quiz[questionNumber].answers[0]}" name="option" required></input>
+              <span></span>
+              </label>
+
+          <label class="answerChoice">
+              <input class="answer" type="radio" value="${quiz[questionNumber].answers[1]}" name="option" required></input>
+              <span></span>
+            </label>
+
+          <label class="answerChoice">
+              <input class="answer" type="radio" value="${quiz[questionNumber].answers[2]}" name="option" required></input>
+              <span></span>
+             </label>
+
+          <label class="answerChoice">
+              <input class="answer" type="radio" value="${quiz[questionNumber].answers[3]}" name="option" required></input>
+              <span></span>
+              </label>
+        </fieldset>
+
+      </form>
+    </div>
+
+    <div class="questionInfo">
+      <br><br>
+      <h3> Question Number: <span class="questionNumber">1</span>/10</h3>
+      <h3> Your Score: <span class="score">0</span>/10</h3>
+      <form> </form>
+    </div>
+    <div class="button"> <button type="button" class="submitButton"> Submit</button>
+    </div>
+
+    <div class="correctAnswerPage" <p>You got it right!</p><img id="correctAnswerImage" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/The_Beatles_i_H%C3%B6torgscity_1963.jpg" alt="the Beatles jumping in the air triumphantly">
+      <p>Yeah, yeah, yeah!</p>
+    </div>
+
+    <div class="wrongAnswerPage" <p>You say yes, I say no!
+      <P> The correct answer was:</p> <img id="wrongAnswerImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/The_Beatles_magical_mystery_tour.jpg/800px-The_Beatles_magical_mystery_tour.jpg" alt="the Beatles in a promo for their movie Magical Mystery Tour"></div>
+
+    <div class="nextButton"> <button type="button" class="nextButton"> Next</button></div>
+    </div>
+    <div class="endPage">
+      <p>And in the end...</p><br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Beatles_with_Ed_Sullivan.jpg/800px-Beatles_with_Ed_Sullivan.jpg" alt="the Beatles with Ed Sullivan in 1964"></div>
+
+    <div class="restartButton"> <button type="restartButton" class="restartButton">play again?</button></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
